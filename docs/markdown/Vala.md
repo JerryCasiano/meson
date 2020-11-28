@@ -255,7 +255,7 @@ automatically by `add_project_arguments()`.
 Passing arguments to [Vala's preprocessor](https://wiki.gnome.org/Projects/Vala/Manual/Preprocessor) requires specifying the language as `c`.  For example, the following statement sets the preprocessor symbol `FUSE_USE_VERSION` to the value `26`:
 
 ```meson
-add_project_arguments('-DFUSE_USE_VERSION=26', language: 'c')
+add_project_arguments('-D', 'FUSE_USE_VERSION=26', language: 'c')
 ```
 
 ## Building libraries
